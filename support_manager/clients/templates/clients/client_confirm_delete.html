@@ -1,0 +1,12 @@
+{% extends 'clients/base.html' %}
+{% block content %}
+
+<h2>¿Eliminar Cliente?</h2>
+<p>{{ client.name }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+</form>
+
+{% endblock %}

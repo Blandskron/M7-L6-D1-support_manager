@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor MVC Clientes & Tickets</title>
+</head>
+<body>
+    <h1>Gestor Web MVC</h1>
+    <nav>
+        <a href="{% url 'client_list' %}">Clientes</a> |
+        <a href="{% url 'ticket_list' %}">Tickets</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'clients/base.html' %}
+{% block content %}
+
+<h2>Formulario Cliente</h2>
+
+<form method="post">
+    {% csrf_token %}  <!-- Token CSRF -->
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+
+{% endblock %}
